@@ -1,6 +1,6 @@
 # [🌠🌧️🫂](https://www.aiemo.app/)
 
-> Shamelessly stolen from the genius mind of @boluov.
+> Shamelessly stole this idea from the brilliant mind of [@boluov](https://github.com/boluov).
 
 **A language model that actually speaks emoji.**
 
