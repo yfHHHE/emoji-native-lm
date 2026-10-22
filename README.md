@@ -1,4 +1,4 @@
-# 🌠🌧️🫂
+# [🌠🌧️🫂](https://www.aiemo.app/)
 
 **A language model that actually speaks emoji.**
 
