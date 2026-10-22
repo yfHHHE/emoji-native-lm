@@ -1,5 +1,7 @@
 # [🌠🌧️🫂](https://www.aiemo.app/)
 
+> Shamelessly stolen from the genius mind of @boluov.
+
 **A language model that actually speaks emoji.**
 
 Say anything to it — news, a rant, a coding request, an order to stop using emoji — and it answers the way a friend would in a chat: with one to three emoji, and nothing else. It doesn't translate your words into emoji; it *replies*.
