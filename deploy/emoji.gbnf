@@ -1,0 +1,13 @@
+# llama.cpp grammar: 1 to 3 emoji, nothing else.
+# Approximate: it admits emoji code points and their usual combinations (variation
+# selector, skin tone, ZWJ sequences, flags, keycaps). App code should still run
+# is_valid_reply() and triple a single emoji (emoji_spec.finalize_reply).
+
+root   ::= emoji emoji? emoji?
+emoji  ::= pic vs? skin? (zwj pic vs? skin?)* | flag | keycap
+pic    ::= [\U0001F300-\U0001F3FA\U0001F400-\U0001FAFF☀-➿⬀-⯿←-⇿⌀-⏿⤴⤵〰〽㊗㊙©®‼⁉™ℹⓂ\U0001F004\U0001F0CF\U0001F170-\U0001F251]
+vs     ::= "️"
+skin   ::= [\U0001F3FB-\U0001F3FF]
+zwj    ::= "‍"
+flag   ::= [\U0001F1E6-\U0001F1FF] [\U0001F1E6-\U0001F1FF]
+keycap ::= [0-9#*] "️"? "⃣"

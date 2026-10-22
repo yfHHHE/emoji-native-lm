@@ -1,0 +1,11 @@
+# Install torch from the CUDA index first, e.g.
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu130
+torch==2.14.1
+transformers==5.20.2
+peft==0.21.2
+trl==1.16.0
+datasets==5.1.0
+accelerate==1.15.0
+emoji==2.16.0
+# only for data generation with the API scripts (gen_prompts.py / gen_replies.py)
+anthropic==1.17.0

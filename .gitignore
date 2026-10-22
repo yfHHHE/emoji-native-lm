@@ -1,0 +1,16 @@
+# environment and tools
+.venv/
+tools/
+__pycache__/
+
+# model weights, checkpoints, logs (weights ship as a GitHub Release)
+runs/
+
+# generated training data (made with Claude; regenerate with the scripts)
+data/*
+!data/eval_adversarial.jsonl
+
+docs_samples.json
+
+# local tooling
+.claude/

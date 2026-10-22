@@ -1,0 +1,17 @@
+FROM ./emoji-qwen3-1.7b-q8_0.gguf
+
+# Single-turn, thinking off: exactly the prompt format used in training.
+TEMPLATE """<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+"""
+
+PARAMETER temperature 1.0
+PARAMETER top_p 0.9
+PARAMETER top_k 0
+PARAMETER num_predict 24
+PARAMETER stop "<|im_end|>"
